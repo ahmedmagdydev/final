@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pens and Books</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-rtl.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+            <ul id="nav-tabs" class="animated headroom--top">
+                <li class="active">
+                    <a href="#">
+                    <img src="img/home.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/store.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/notif.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/messages.png" alt="">
+                    </a>
+                </li>
+                <li>  <a href="#"><i class="fa fa-search"></i></a></li>
+                 <li>  <a href="#" data-panel="sideMenu" class="toggle-menu sidy--to-open"><i class="fa fa-bars"></i></a></li>
+            </ul>
+
+          
+
+        <nav data-position="right" data-size="250px" data-fx="slide_overlay" class="sidy__panel" id="sideMenu">
+            <div class="profile-pic"><img src="img/dummy/profile-pic-side.jpg" alt="">
+            </div>
+            <a href="#" class="profile-name">Karim Farid</a>
+            <ul class="profile-records">
+                <li>480</li>
+                <li>480</li>
+                <li>480</li>
+                <li>480</li>
+            </ul>
+            <a href="#" class="btn btn-block">My Profile</a>
+            <ul class="side-options">
+                <li><a href="#"><i class="fa fa-star"></i> terms & conditions</a>
+                </li>
+                <li><a href=""><i class="fa fa-"></i>Privacy</a>
+                </li>
+                <li><a href=""><i class="fa fa-"></i>About us</a>
+                </li>
+                <li><a href=""><i class="fa fa-"></i>Contact us</a>
+                </li>
+                <li><a href=""><i class="fa fa-"></i>Settings</a>
+                </li>
+                <li><a href=""><i class="fa fa-"></i>Sign out</a>
+                </li>
+            </ul>
+        </nav>
+        
+    </nav>
+    <div class="content">
+        <div class="row">
+            <div class="TopLabel">
+                <div class="col-sm-12">
+                    <span class="pull-right">إضافة كتاب</span>
+                </div>
+            </div>
+        </div>
+       
+
+       <div class="container-fluid form-horizontal">
+        </br>
+                <div class="row form-group">
+                   <div class="col-xs-12">
+                       <input type="text" class="form-control input-sm" placeholder="أسم الكتاب">
+                   </div>
+               </div>
+             
+               <div class="row form-group">
+                   <div class="col-xs-12">
+                      <!--  <div class="btn-group sectonDDB">
+                           <button type="button" class="btn btn-default btn-block">القســــم</button>
+                           <button type="button" class="btn btn-default  dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                               <span class="caret"></span>
+                               <span class="sr-only">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">الادب</a>
+                               </li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">التاريخ</a>
+                               </li>
+                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">الروايات </a>
+                               </li>
+                           </ul>
+                       </div> -->
+                       <select name="" id=""  class="form-control">
+                           <option value="">القسم</option>
+                           <option value="">الادب</option>
+                           <option value="">الشعر</option>
+                       </select>
+                   </div>
+               </div>
+              
+               <div class="row form-group">
+                   <div class="col-xs-12 bookBG">
+                       <input type="url" class="form-control input-sm" placeholder="&#xf055;    أرفق غلاق الكتاب">
+                   </div>
+               </div>
+              
+               <div class="row form-group">
+                   <div class="col-xs-12 bookNotes">
+                       <textarea type="url" class="form-control input-md" placeholder="نبذه عن الكتاب"></textarea>
+                   </div>
+               </div>
+              
+               <div class="row form-group">
+                   <div class="col-xs-12 bookTable">
+                       <table class="table table-bordered">
+                           <thead>
+                               <tr class="headerBG">
+                                   <td>
+                                       المكان
+                                   </td>
+                                   <td>
+                                       العنوان
+                                   </td>
+                                   <td>
+                                       التليفون
+                                   </td>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr class="bodyBG">
+                                   <td>
+                                       <input type="text" class="form-control " placeholder="&#xf055;">
+                                   </td>
+                                   <td>
+                                       <input type="text" class="form-control " placeholder="&#xf055;">
+                                   </td>
+                                   <td>
+                                       <input type="text" class="form-control " placeholder="&#xf055;">
+                                   </td>
+                               </tr>
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+              
+               <div class="row form-group">
+                   <div class="col-xs-12 addPlace">
+                       <input type="text" class="form-control input-sm" placeholder="&#xf055;    إضافة مكان" disabled>
+                   </div>
+               </div>
+              
+               <div class="row form-group">
+                   <div class="col-xs-12 registartion">
+                       <button type="button" class="btn Send">نشر</button>
+                       <button type="button" class="btn Cancel pull-left">إلغاء</button>
+                   </div>
+               </div>
+           </div>    </div>
+   
+   
+
+     <ul id="addMenu" data-open="-" data-close="+">
+        <li><a href="#">book</a>
+        </li>
+        <li><a href="#">article</a>
+        </li>
+    </ul>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/headroom.js"></script>
+    <script src="js/sidy.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
