@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   
   // the nav-tabs hide when scroll down show when scroll up
 
-$('#commentsModal').modal() 
+$('.ui.sidebar').sidebar('attach events', '.toggleButton', 'show');
 
   // the bottom button that adds new article and book
 

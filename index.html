@@ -7,6 +7,7 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/sidebar.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-rtl.css" rel="stylesheet">
@@ -15,35 +16,7 @@
 </head>
 
 <body>
-    <nav>
-            <ul id="nav-tabs" class="animated headroom--top">
-                <li class="active">
-                    <a href="#">
-                    <img src="img/home.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="img/store.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="img/notif.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="img/messages.png" alt="">
-                    </a>
-                </li>
-                <li>  <a href="#"><i class="fa fa-search"></i></a></li>
-                 <li>  <a href="#" data-panel="sideMenu" class="toggle-menu sidy--to-open"><i class="fa fa-bars"></i></a></li>
-            </ul>
-
-          
-
-        <nav data-position="right" data-size="250px" data-fx="slide_overlay" class="sidy__panel" id="sideMenu">
+<div class="ui sidebar left ">
             <div class="profile-pic"><img src="img/dummy/profile-pic-side.jpg" alt="">
             </div>
             <a href="#" class="profile-name">Karim Farid</a>
@@ -68,9 +41,40 @@
                 <li><a href=""><i class="fa fa-"></i>Sign out</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+        <nav class="ui top fixed menu">
+            <ul id="nav-tabs" class="animated headroom--top">
+                <li class="active">
+                    <a href="#">
+                    <img src="img/home.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/store.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/notif.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <img src="img/messages.png" alt="">
+                    </a>
+                </li>
+                <li>  <a href="#"><i class="fa fa-search"></i></a></li>
+                 <li>  <a href="#" data-transition="overlay" class="toggleButton"><i class="fa fa-bars"></i></a></li>
+            </ul>
+
+          
+
+        
         
     </nav>
+        <div class="pusher">
+    
 
     <div class="content">
         <article>
@@ -234,11 +238,11 @@
         <li><a href="#">article</a>
         </li>
     </ul>
-
+</div>
     <script src="js/jquery-2.1.1.min.js"></script>
-    <script src="js/headroom.js"></script>
-    <script src="js/sidy.js"></script>
-    <script src="js/bootstrap.js"></script>
+       <script src="js/bootstrap.js"></script>
+    <script src="js/sidebar.min.js"></script>
+ 
     <script src="js/script.js"></script>
 </body>
 
