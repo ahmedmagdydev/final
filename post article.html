@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <title>Pens and Books</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <link rel="stylesheet" href="css/slidebars.min.css">
         <link href="css/all.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="ui sidebar left ">
+<div class="sb-slidebar sb-right sb-style-overlay">
             <div class="profile-pic"><img src="img/dummy/profile-pic-side.jpg" alt="">
             </div>
             <a href="#" class="profile-name"><span class="bigUserName">Karim Farid</span>.pensandbook.com</a>
@@ -70,10 +71,10 @@
                     </a>
                 </li>
                 <li>  <a href="#"><i class="fa fa-search"></i></a></li>
-                 <li>  <a href="#" data-transition="overlay" class="toggleButton"><i class="fa fa-bars"></i></a></li>
+                 <li>  <a href="#" data-transition="overlay" class="sb-toggle-right"><i class="fa fa-bars"></i></a></li>
             </ul>
     </nav>
-        <div class="pusher">
+        <div class="pusher" id="sb-site">
     <div class="content">
         <article>
             <div class="clearfix">
@@ -147,7 +148,7 @@
     </div>
     <script src="js/jquery-2.1.1.min.js"></script>
        <script src="js/bootstrap.js"></script>
-    <script src="js/sidebar.min.js"></script>
+    <script src="js/slidebars.min.js"></script>
  
     <script src="js/script.js"></script>
 
