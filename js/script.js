@@ -5,7 +5,11 @@ jQuery(document).ready(function($) {
           $.slidebars();
 
 $('textarea').elastic();
-
+ $('#outer_container').PieMenu({
+        'starting_angel':45,
+        'angel_difference' : 90,
+        'radius':80,
+    }); 
   // the bottom button that adds new article and book
 
   var ul=$("#addMenu"),
