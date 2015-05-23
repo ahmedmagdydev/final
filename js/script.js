@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
           $.slidebars();
 
-
+$('textarea').elastic();
 
   // the bottom button that adds new article and book
 
